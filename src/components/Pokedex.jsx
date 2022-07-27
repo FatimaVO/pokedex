@@ -22,11 +22,12 @@ const Pokedex = () => {
             .get("https://pokeapi.co/api/v2/type")
             .then((res) => setTypes(res.data.results));
     }, [])
-
+    
+    const pokemonSearchLowerCase= pokemonSearch.toLowerCase()
 
     const submit = (e) => {
         e.preventDefault();
-        navigate(`/pokedex/${pokemonSearch}`);
+        navigate(`/pokedex/${pokemonSearchLowerCase}`);
     }
 
     const filterType = (e) => {
@@ -60,7 +61,7 @@ const Pokedex = () => {
                 <form className='formSearchPokemon' onSubmit={submit}>
                     <input
                         type="text"
-                        value={pokemonSearch}
+                        value={pokemonSearchLowerCase}
                         onChange={(e) => setPokemonSearch(e.target.value)}
                         className='inputSearchPokemon'
                         placeholder='search here...'
