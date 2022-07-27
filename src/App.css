@@ -567,10 +567,10 @@ hr {
 
 .pages button {
   background-color: rgb(255, 255, 255);
-  border: none;
+  border: solid rgb(184, 184, 184) 1px;
   width: 30px;
   height: 30px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 10px;
 }
 
 .fa-angle-left, .fa-angle-right{
