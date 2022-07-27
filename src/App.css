@@ -187,6 +187,7 @@
   bottom: 0;
   left: 5%;
   font-weight: 800;
+  width: 95%;
 }
 
 .userTextName {
@@ -563,16 +564,17 @@ hr {
   gap: 50px;
 }
 
+
 .pages button {
-  background-color: none;
-  outline: none;
+  background-color: rgb(255, 255, 255);
   border: none;
+  width: 30px;
+  height: 30px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
-.fa-circle-chevron-left,
-.fa-circle-chevron-right {
-  color: #FE1936;
-  font-size: 30px;
+.fa-angle-left, .fa-angle-right{
+  font-size: 18px;
 }
 
 .back {
@@ -655,6 +657,7 @@ button:hover,
     font-size: 12px;
     top: 25px;
     text-align: left;
+    max-width: 90%;
   }
 
   .inputSearchPokemon {
@@ -755,4 +758,12 @@ button:hover,
   .logOut {
     top: 10px;
   }
+}
+
+@media only screen and (max-width: 810px) {
+
+.greetingTitle {
+  font-size: 40px;
+}
+
 }

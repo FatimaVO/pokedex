@@ -85,13 +85,13 @@ const Pokedex = () => {
 
             <div className='pages'>
                 <button onClick={() => setPage(page - 1)} disabled={page === 1}>
-                    <i className="fa-solid fa-circle-chevron-left"></i>
+                    <i className="fa-solid fa-angle-left"></i>
                 </button>
                 &bull;
                 &bull;
                 &bull;
                 <button onClick={() => setPage(page + 1)} disabled={page === lastPage}>
-                    <i className="fa-solid fa-circle-chevron-right"></i>
+                    <i className="fa-solid fa-angle-right"></i>
                 </button>
             </div>
 
